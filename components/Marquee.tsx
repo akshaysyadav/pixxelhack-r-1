@@ -1,12 +1,22 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import React from 'react';
 
-export default function Marquee() {
-  const marqueeText = "Creating Magic Frame by Frame • Animation is Emotion • Crafting Visual Wonders • ";
-  
+type MarqueeProps = {
+  speed?: number;
+  className?: string;
+  children?: React.ReactNode;
+};
+
+export default function Marquee({ speed = 20, className = '', children }: MarqueeProps) {
+  const marqueeText =
+    typeof children === 'string'
+      ? children
+      : "Creating Magic Frame by Frame • Animation is Emotion • Crafting Visual Wonders • ";
+
   return (
-    <div className="bg-gradient-to-r from-purple-500 to-blue-500 text-white py-3 overflow-hidden relative">
+    <div className={`bg-gradient-to-r from-purple-500 to-blue-500 text-white py-3 overflow-hidden relative ${className}`}>
       <motion.div
         className="flex whitespace-nowrap"
         animate={{ x: [0, -1000] }}
@@ -14,7 +24,7 @@ export default function Marquee() {
           x: {
             repeat: Infinity,
             repeatType: "loop",
-            duration: 20,
+            duration: speed,
             ease: "linear",
           },
         }}
