@@ -26,7 +26,7 @@ export default function ContactForm() {
     });
   };
 
-  const handleSubmit = async (e) => {
+const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
     
