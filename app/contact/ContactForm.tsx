@@ -19,34 +19,34 @@ export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState('');
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
+ const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  setFormData({
+    ...formData,
+    [e.target.name]: e.target.value
+  });
+};
 
-const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitStatus('success');
-      setFormData({
-        name: '',
-        email: '',
-        company: '',
-        project: '',
-        budget: '',
-        timeline: '',
-        message: ''
-      });
-      
-      setTimeout(() => setSubmitStatus(''), 5000);
-    }, 2000);
-  };
+const handleSubmit = (e: React.FormEvent) => {
+  e.preventDefault();
+  setIsSubmitting(true);
+
+  setTimeout(() => {
+    setIsSubmitting(false);
+    setSubmitStatus('success');
+    setFormData({
+      name: '',
+      email: '',
+      company: '',
+      project: '',
+      budget: '',
+      timeline: '',
+      message: ''
+    });
+
+    setTimeout(() => setSubmitStatus(''), 5000);
+  }, 2000);
+};
+
 
   return (
     <motion.div
