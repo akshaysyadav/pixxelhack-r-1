@@ -4,8 +4,21 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import RippleEffect from '@/components/RippleEffect';
 
+type Project = {
+  id: number;
+  title: string;
+  category: string;
+  client: string;
+  duration: string;
+  description: string;
+  image: string;
+  tags: string[];
+  results: string;
+};
+
 export default function ProjectsGrid() {
-  const [selectedProject, setSelectedProject] = useState(null);
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+
 
   const projects = [
     {
