@@ -20,11 +20,11 @@
 
 ## 🧰 Tech Stack
 
-- **Frontend:** Next.js 14 (App Router)
-- **Styling:** Tailwind CSS, Framer Motion
-- **Language:** TypeScript + JavaScript
-- **Deployment:** Vercel
-- **Icons & Assets:** Lucide Icons, Gradient UI, Custom 3D Models
+| Frontend  | Backend  | Deployment |
+|-----------|----------|------------|
+| Next.js   | Vercel (Serverless Functions) | Vercel |
+| Tailwind CSS | OpenAI API (via Edge Function) |  |
+| TypeScript | — | |
 
 ---
 
@@ -40,17 +40,11 @@ npm run dev
 Then open http://localhost:3000 in your browser.
 
 📁 Folder Structure
-php
-Copy
-Edit
-pixxelhack-r-1/
-├── app/                 # Pages and routing (App Router)
-├── components/          # Reusable UI components
-├── public/              # Static images and assets
-├── styles/              # Global and utility styles
-├── utils/               # Helper functions (if any)
-├── tailwind.config.js   # Tailwind customization
-└── tsconfig.json        # TypeScript config
+├── app/ # Pages and routes (Next.js App Router)
+├── components/ # Reusable React components
+├── public/ # Static assets like screenshots
+├── styles/ # Tailwind config & PostCSS
+├── README.md # You're here!
 
 Future Scope
 Add backend form handling with Firebase or Node.js
