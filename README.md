@@ -1,30 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎬 Anitech – Animating Imagination into Reality
 
-## Getting Started
+**Anitech** is a creative and interactive animation studio website built for **PixxelHack 2025**. It brings animation projects to life through a sleek interface, vibrant visuals, and a professional layout tailored for animation studios.
 
-First, run the development server:
+> 🚀 **Live Demo**: [pixxelhack-r-1-x3y7.vercel.app](https://pixxelhack-r-1-x3y7.vercel.app)
+
+---
+
+## 🌟 Features
+
+- 🎨 Beautiful landing page with hero animation
+- 🧩 Sections: About, Services, Portfolio, Team, Contact
+- 🌀 Interactive marquee showcasing recent work
+- ✨ Framer Motion for smooth animations
+- 🖱️ Call-to-action buttons for “View Work” and “Get in Touch”
+- 📱 Responsive and mobile-friendly layout
+- ☁️ Hosted on Vercel with production deployment
+
+---
+
+## 🧰 Tech Stack
+
+- **Frontend:** Next.js 14 (App Router)
+- **Styling:** Tailwind CSS, Framer Motion
+- **Language:** TypeScript + JavaScript
+- **Deployment:** Vercel
+- **Icons & Assets:** Lucide Icons, Gradient UI, Custom 3D Models
+
+---
+
+## 🛠️ Installation
+
+To run this project locally:
 
 ```bash
+git clone https://github.com/akshaysyadav/pixxelhack-r-1.git
+cd pixxelhack-r-1
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Then open http://localhost:3000 in your browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📁 Folder Structure
+php
+Copy
+Edit
+pixxelhack-r-1/
+├── app/                 # Pages and routing (App Router)
+├── components/          # Reusable UI components
+├── public/              # Static images and assets
+├── styles/              # Global and utility styles
+├── utils/               # Helper functions (if any)
+├── tailwind.config.js   # Tailwind customization
+└── tsconfig.json        # TypeScript config
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Future Scope
+Add backend form handling with Firebase or Node.js
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Integrate a CMS (e.g., Sanity) for project uploads
 
-## Learn More
+Animation previews (GIFs, Lottie)
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Add blog or news updates section
