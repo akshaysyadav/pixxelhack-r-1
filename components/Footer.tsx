@@ -68,7 +68,7 @@ export default function Footer() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              {['About Us', 'Services', 'Portfolio', 'Team', 'Contact'].map((link) => (
+              {['About', 'Services', 'Portfolio', 'Team', 'Contact'].map((link) => (
                 <li key={link}>
                   <Link
                     href={`/${link.toLowerCase().replace(' ', '-')}`}
